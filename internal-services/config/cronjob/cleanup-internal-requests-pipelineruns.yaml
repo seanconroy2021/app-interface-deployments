@@ -68,7 +68,7 @@ spec:
                   export -f deleteAndLog
                   xargs -a ${PRUNING_CRS_FILE} -i -P ${MAX_PROCS} bash -c 'deleteAndLog "{}"'
               imagePullPolicy: IfNotPresent
-              image: quay.io/konflux-ci/release-service-utils:9089cafbf36bb889b4b73d8c2965613810f13736
+              image: quay.io/konflux-ci/release-service-utils@sha256:2d9e07584dd9510d14c48390bd0b080ed6ff44edca2c43c704cdbc5c82a2f99d
               volumeMounts:
                 - mountPath: /var/tmp
                   name: temp-directory
